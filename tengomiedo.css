@@ -15,8 +15,6 @@ body {
   color: #ffffff;
 }
 
-
-
 @keyframes luzRota {
   0% {
     opacity: 0.2;
@@ -96,9 +94,16 @@ h1 {
   color: black;
   width: 95%;
   max-width: 950px;
+
+  /* 🔥 Box model agregado */
+  border: 2px solid rgba(255, 0, 0, 0.6);
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  box-sizing: border-box;
 }
+
 .imagen-menu {
-display: block;
+  display: block;
   margin: 0 auto;
   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
   animation: resplandor 3s infinite ease-in-out;
@@ -137,7 +142,6 @@ display: block;
   min-width: 100%;
   padding: 10px;
 }
-
 
 .queso video{
   width: 100%;
@@ -185,7 +189,6 @@ display: block;
   border-radius: 10px;
 }
 
-
 @media (max-width: 768px) {
   h1 {
     font-size: 6vw;
@@ -229,7 +232,6 @@ display: block;
   animation: parpadeo 1.8s infinite, temblor 0.2s infinite;
   text-align: center;
 }
-
 
 @keyframes parpadeo {
   0%, 100% { opacity: 1; }

@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-background-color: #111;
+  background-color: #111;
   color: #e0e0e0;
   font-family: 'Georgia', serif;
   line-height: 1.6;
@@ -115,6 +115,10 @@ section {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   width: 100%;
   max-width: 800px;
+
+  /* 🔥 Box model agregado */
+  border: 2px solid rgba(255, 0, 0, 0.6);
+  box-sizing: border-box;
 }
 
 .animacion-container.visible {
@@ -187,8 +191,8 @@ footer {
 
   .animacion-container {
     padding: 15px;
-    margin: 20px auto;
-}
+    margin: 20px auto;
+  }
 }
 .social-icon {
   display: flex;
@@ -222,7 +226,6 @@ footer {
 .icon-elem:nth-child(4) .icon:hover {
   color: #25D366;
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
